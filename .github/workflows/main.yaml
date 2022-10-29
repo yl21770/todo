@@ -15,5 +15,7 @@ jobs:
 
     #list of steps to perform task
     steps:
-    - name: Checkout the current branch
+    - name: Checkout the correct branch
       uses: actions/checkout@v3
+      with:
+        ref: 'release/*'
